@@ -5,10 +5,12 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Path2D;
 
-public class DrawingCanvasPaths extends JComponent
+public class DrawingCanvasLinePaths extends JComponent
 {
-	public DrawingCanvasPaths()
-	{}
+	public DrawingCanvasLinePaths()
+	{
+		super();
+	}
 
 
 	@Override
@@ -23,5 +25,9 @@ public class DrawingCanvasPaths extends JComponent
 
 		Path2D.Double p = new Path2D.Double();
 		p.moveTo(100, 300);
+		p.lineTo(150, 200);
+		p.lineTo(200, 300);
+		p.closePath();
+		g2D.fill(p);
 	}
 }

@@ -12,7 +12,9 @@ public class Drawing
 		Integer w = 1000;
 		Integer h = 1000;
 		JFrame f = new JFrame();
-		DrawingCanvasClouds dc = new DrawingCanvasClouds(w, h);
+		// DrawingCanvasClouds dc = new DrawingCanvasClouds(w, h);
+		// DrawingCanvasLinePaths dc = new DrawingCanvasLinePaths();
+		DrawingCanvasCurvePaths dc = new DrawingCanvasCurvePaths();
 		f.setSize(w, h);
 		f.setTitle("Hello JFrame");
 		f.add(dc);
