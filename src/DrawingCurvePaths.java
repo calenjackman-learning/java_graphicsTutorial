@@ -5,9 +5,9 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Path2D;
 
-public class DrawingCanvasCurvePaths extends JComponent
+public class DrawingCurvePaths extends JComponent
 {
-	public DrawingCanvasCurvePaths()
+	public DrawingCurvePaths()
 	{
 		super();
 	}

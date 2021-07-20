@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
-public class DrawingCanvasClouds extends JComponent
+public class DrawingClouds extends JComponent
 {
 	private Integer width;
 	private Integer height;
@@ -12,7 +12,7 @@ public class DrawingCanvasClouds extends JComponent
 	private Cloud c2;
 	private Cloud c3;
 
-	public DrawingCanvasClouds(Integer w, Integer h)
+	public DrawingClouds(Integer w, Integer h)
 	{
 		this.width = w;
 		this.height = h;

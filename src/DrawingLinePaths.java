@@ -5,9 +5,9 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Path2D;
 
-public class DrawingCanvasLinePaths extends JComponent
+public class DrawingLinePaths extends JComponent
 {
-	public DrawingCanvasLinePaths()
+	public DrawingLinePaths()
 	{
 		super();
 	}
