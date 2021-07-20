@@ -14,7 +14,8 @@ public class Drawing
 		JFrame f = new JFrame();
 		// DrawingCanvasClouds dc = new DrawingCanvasClouds(w, h);
 		// DrawingCanvasLinePaths dc = new DrawingCanvasLinePaths();
-		DrawingCurvePaths dc = new DrawingCurvePaths();
+		// DrawingCurvePaths dc = new DrawingCurvePaths();
+		DrawingTranslations dc = new DrawingTranslations();
 		f.setSize(w, h);
 		f.setTitle("Hello JFrame");
 		f.add(dc);
