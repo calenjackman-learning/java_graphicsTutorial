@@ -25,9 +25,9 @@ public class DrawingLinePaths extends JComponent
 
 		Path2D.Double p = new Path2D.Double();
 		p.moveTo(100, 300);
-		p.lineTo(150, 200);
+		p.lineTo(50, 500);
 		p.lineTo(200, 300);
 		p.closePath();
-		g2D.fill(p);
+		g2D.draw(p);
 	}
 }

@@ -9,13 +9,10 @@ public class Drawing
 
 	public void drawWindow()
 	{
-		Integer w = 1000;
-		Integer h = 1000;
+		Integer w = 1200;
+		Integer h = 1200;
 		JFrame f = new JFrame();
-		// DrawingCanvasClouds dc = new DrawingCanvasClouds(w, h);
-		// DrawingCanvasLinePaths dc = new DrawingCanvasLinePaths();
-		// DrawingCurvePaths dc = new DrawingCurvePaths();
-		DrawingTranslations dc = new DrawingTranslations();
+		DrawingHexagon dc = new DrawingHexagon();
 		f.setSize(w, h);
 		f.setTitle("Hello JFrame");
 		f.add(dc);
