@@ -12,7 +12,7 @@ public class Drawing
 		Integer w = 1200;
 		Integer h = 1200;
 		JFrame f = new JFrame();
-		DrawingHexagon dc = new DrawingHexagon();
+		DrawingHexagonBoard dc = new DrawingHexagonBoard();
 		f.setSize(w, h);
 		f.setTitle("Hello JFrame");
 		f.add(dc);

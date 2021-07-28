@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Path2D;
+import java.awt.geom.Point2D;
 
 public class DrawingLinePaths extends JComponent
 {
@@ -23,11 +24,21 @@ public class DrawingLinePaths extends JComponent
 
 		g2D.setRenderingHints(rh);
 
-		Path2D.Double p = new Path2D.Double();
-		p.moveTo(100, 300);
-		p.lineTo(50, 500);
-		p.lineTo(200, 300);
-		p.closePath();
-		g2D.draw(p);
+		Point2D.Double startCoord = new Point2D.Double((double) 10, (double) 10);
+
+		Double sideLength = (double) 50;
+
+		Double yUnits = sideLength / 2;
+		Double xUnits = yUnits * Math.sqrt(3);
+
+		Path2D.Double h1 = new Path2D.Double();
+		h1.moveTo(startCoord.getX() + 0 * xUnits, startCoord.getY() + 0 * yUnits);
+		h1.lineTo(startCoord.getX() + 0 * xUnits, startCoord.getY() + 0 * yUnits);
+		h1.lineTo(startCoord.getX() + 0 * xUnits, startCoord.getY() + 0 * yUnits);
+		h1.lineTo(startCoord.getX() + 0 * xUnits, startCoord.getY() + 0 * yUnits);
+		h1.lineTo(startCoord.getX() + 0 * xUnits, startCoord.getY() + 0 * yUnits);
+		h1.lineTo(startCoord.getX() + 0 * xUnits, startCoord.getY() + 0 * yUnits);
+		h1.closePath();
+		g2D.draw(h1);
 	}
 }
